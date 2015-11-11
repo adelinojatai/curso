@@ -2,6 +2,8 @@ package curso;
 
 
 
+import static org.junit.Assert.*;
+
 import org.junit.Test;
 
 
@@ -11,8 +13,9 @@ public class CalculaTest {
 	public void somar() {
 		Double resultado;
 		Calcula calcula = new Calcula();
-		resultado = calcula.calcular(10.0, 20.0, "somar");
+		resultado = calcula.somar(10.0, 20.0);
 		System.out.println("O resultado da soma é: "+resultado);
+		//assertEquals(30.0, resultado);
 		
 	}
 	
@@ -20,7 +23,7 @@ public class CalculaTest {
 	public void diminuir() {
 		Double resultado;
 		Calcula calcula = new Calcula();
-		resultado = calcula.calcular(20.0, 10.0, "diminuir");
+		resultado = calcula.subtrair(20.0, 10.0);
 		System.out.println("O resultado da subtração é: "+resultado);
 		
 	}
@@ -29,7 +32,7 @@ public class CalculaTest {
 	public void multiplicar() {
 		Double resultado;
 		Calcula calcula = new Calcula();
-		resultado = calcula.calcular(10.0, 20.0, "multiplicar");
+		resultado = calcula.multiplicar(10.0, 20.0);
 		System.out.println("O resultado da multiplicação é: "+resultado);
 		
 	}
@@ -38,7 +41,7 @@ public class CalculaTest {
 	public void dividir() {
 		Double resultado;
 		Calcula calcula = new Calcula();
-		resultado = calcula.calcular(2.0, 10.0, "dividir");
+		resultado = calcula.dividir(20.0, 10.0);
 		System.out.println("O resultado da divisão é: "+resultado);
 		
 	}
