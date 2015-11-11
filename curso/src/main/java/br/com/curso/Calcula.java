@@ -1,8 +1,7 @@
 package br.com.curso;
 
-import com.sun.xml.internal.ws.developer.Serialization;
 
-@Serialization
+
 public class Calcula {
 	Double result = 0.0;
 		

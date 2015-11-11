@@ -6,12 +6,12 @@ import org.junit.Test;
 
 public class CalculaTestes {
 
-	Calcula calcula;
 	Double result;
+	Calcula calcula;
 	
 	@Test
 	public void testSomar() {
-		calcula = new Calcula();
+		 calcula = new Calcula();
 		result = calcula.somar(20.0, 10.0);
 		
 		assertEquals(Double.valueOf(30.0), result);
